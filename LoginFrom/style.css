@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Permanent Marker", cursive;
+}
+::selection{
+    background:  #E8439F;
+    color: #fff;
+}
+
+body{
+    background-image: linear-gradient(to right, #B443AD , #E8439F);
+}
+.Container{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 65%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 0;
+    position: fixed;
+}
+
+
+header{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+header h1{
+    font-size: 25px;
+}
+.Button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Button button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login{
+    background-image: linear-gradient(to right, #B443AD , #E8439F);
+    border: none;
+    color: #fff;
+    margin-right: 5px;
+    transition: background-image 0.15s;
+}
+.login:hover{
+    opacity: 0.9;
+}
+.login:active{
+    opacity: 0.8;
+}
+.singUp{
+    background-color: #fff;
+    border: 1px solid rgb(207, 207, 207);
+    transition:  background-color 0.15s;
+}
+.singUp:hover{
+    background-color: #f8f8f8;
+}
+.singUp:active{
+    background-color: #ececec;}
+main{
+    width: 100%;
+    margin-top: 20px;
+}
+.Input{
+    display: grid;
+    width: 90%;
+    gap: 12px;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.Input input{
+    padding: 10px 25px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 1px #f8f8f8;
+}
+.Input input::placeholder{
+    color: rgb(171, 171, 171);
+}
+.Forgot{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    padding-top: 10px;
+}
+a{
+    font-size: 11px;
+    text-decoration: none;
+    color: #d04792;
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: underline;
+}
+.Forgot .login{
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: -15px;
+    cursor: pointer;
+}
+
+.LastDiv p{
+    text-align: center;
+    font-size: 13px;
+}
+.LastDiv p a{
+    font-size: 13px;
+}
+
+@media (max-width:600px) {
+    .Button{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+.AnimationDiv1{
+    width: 30px;
+    height: 30px;
+    background-color: #E8439F;
+    border-radius: 50%;
+    animation: MyAnimation 3s infinite linear;
+    margin-top: 100px;
+    margin-left: 3%;
+}
+
+.AnimationDiv2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:  #E8439F;
+    position: absolute;
+    top: 480px;
+    left: 3%;
+    animation: MyAnimation 3s infinite linear;
+}
+.AnimationDiv3{
+    width: 30px;
+    height: 30px;
+    background-color:  #B443AD;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    right: 7%;
+    animation: MyAnimation 3s infinite linear;
+}
+.AnimationDiv4{
+    width: 30px;
+    border-radius: 50%;
+    height: 30px;
+    background-color:  #B443AD;
+    position: absolute;
+    top: 480px;
+    right: 7%;
+    animation: MyAnimation 3s infinite linear;
+}
+
+@keyframes MyAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0);
+}
+}
+
+@media (max-width:500px) {
+    .AnimationDiv1,
+    .AnimationDiv2,
+    .AnimationDiv3,
+    .AnimationDiv4{
+        display: none;
+    }
+}
