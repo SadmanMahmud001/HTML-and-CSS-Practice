@@ -4,7 +4,7 @@
     color: white;
 }
 *{
-    font-family: "Comic Neue", cursive;
+    font-family: sans-serif;
     padding: 0;
     margin: 0;
     text-transform: capitalize;
@@ -34,7 +34,7 @@
     background-color: #EEEFEF;
 }
 .LogoDiv img{
-    width: 80px;
+    width: 50px;
 }
 
 .Right{
