@@ -26,17 +26,13 @@
     background:  var(--mainColor);
     color: #fff;
 }
-body{
-    padding-bottom: 2000px;
-}
 
 :root{
     --mainColor:#91FF00;
+    /* --mainColor:red; */
 }
 .container{
    display: grid;
-   width: 100%;
-   height: 100%;
 }
 
 header{
@@ -95,6 +91,10 @@ header{
     text-decoration: none;
     cursor: pointer;
     text-transform: uppercase;
+    transition: all 0.15s;
+}
+.headerText ul li a:hover{
+    color: var(--mainColor);
 }
 
 .lastText{
@@ -154,7 +154,7 @@ header{
 }
 
 section{
-    margin-top: 70px;
+    margin-top: 67px;
     background-color: black;
     height: 90%;
     display: grid;
@@ -234,6 +234,7 @@ section{
     display: grid;
     justify-content: center;
     align-items: end;
+    overflow: hidden;
 }
 
 .right div {
@@ -498,9 +499,8 @@ main{
 .pBox button{
     padding: 5px 12px;
     background: black;
+    border: 1px solid #000000;
     color: #fff;
-    border: 1px solid #ffffff26;
-    backdrop-filter: blur(16px);
     font-size: 10px;
     border-radius: 4px;
     align-items: center;
@@ -748,5 +748,204 @@ main{
     border-radius: 50%;
 }
 
+@media (max-width:720px) {
+    .location{
+        grid-template-columns: 1fr !important;
+    }
+    .map{
+        width: 80% !important;
+        height: 300px !important;
+    }
+}
+.location{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #dedede;
+    background-color: #000000;
+}
 
 
+.inputsText{
+    padding: 35px;
+    padding-top: 10px !important;
+    line-height: 20px;
+    word-spacing: 1px;
+    border: 1px solid #ffffff26;
+    margin: 20px;
+    border-radius: 8px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+.input input{
+    padding: 8px 10px;
+    background-color: #1A1A1A;
+    border: 1px solid rgb(65, 64, 64);
+    border-radius: 4px;
+}
+
+.input textarea{
+    background-color: #1A1A1A;
+    padding: 10px 10px 50px 10px;
+    border: 1px solid #414040;
+    border-radius: 4px;
+}
+.input input,textarea::placeholder{
+    font-size: 12px;
+}
+
+.input label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.topText{
+    margin-bottom: 20px;
+}
+
+.GET-p{
+    font-size: 13px !important;
+    color: #828282 !important;
+}
+
+.topText h2{
+    font-weight: 300;
+    margin: 10px 0 !important;
+}
+.topText{
+    padding: 35px 10px;
+}
+.topText p{
+    font-size: 13px;
+}
+
+.phoneNumber{
+    background-color: rgb(0, 0, 0);
+    height: 600px;
+    padding-top: 20px !important;
+    padding: 35px;
+}
+
+.pmvInformation{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.pmvInformation svg{
+    width: 20px;
+    fill: white !important;
+    margin-right: 30px;
+    background: 0E0E0E;
+    padding: 10px;
+    border: 1px solid #414040;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pmvInformation h5{
+    margin-left: 60px;
+    margin-top: -40px;
+    margin-bottom: 3px;
+}
+
+.pmvInformation span{
+    color: #828282 !important;
+    margin-left: 58px;
+    font-size: 13px;
+}
+
+
+.map{
+    width: 270px;
+    height: 230px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #414040;
+    border-radius: 4px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.lastFooter{
+    border-top: 1px solid #414040;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    margin-bottom: -70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerText{
+    margin-right: 3%;
+    display: grid;
+}
+
+.footerText p{
+    font-size: 13px;
+    color: #fff;
+}
+.footerText p a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.15s;
+}
+.footerText p a:hover{
+    color: var(--mainColor);
+    text-decoration: underline;
+}
+
+.lastFooter .svg{
+    background-color: red;
+    width: 200px;
+}
+
+.svg2{
+    display: flex;
+    margin-top: 10px;
+}
+.svg2 svg{
+    width: 17px;
+    background-color: #000000;
+    fill: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid  rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.fb2{
+    margin-right: 7px;
+}
+.twitter2,.linkedIn2,.pinterest2{
+    margin: 0 7px;
+}
+.svg2 svg:hover{
+    fill: #000000;
+    background-color: #fff;
+}
+
+
+@media (max-width:500px) {
+    .lastFooter{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .svg2{
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .footerText{
+        text-align: center;
+    }
+}
