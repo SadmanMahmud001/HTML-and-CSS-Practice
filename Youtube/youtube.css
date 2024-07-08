@@ -32,6 +32,7 @@ header{
     left: 0;
     right: 0;
     background-color: #000000;
+    /* background-color: #ffffff; */
 }
 body{
     background: black;
@@ -96,17 +97,19 @@ body{
     padding: 11.7px 20px;
     background-color: transparent;
     border: 1px solid #303030;
-    border-radius: 30px;
+    border-radius: 30px 0 0 30px;
+    color: white;
+    outline: none;
 }
-
 .searchDiv{
-    margin-left: -19px;
     padding: 9.3px 15px;
     display: flex;
+    margin-right: -7px;
     align-items: center;
     justify-content: center;
     background: transparent;
-    background-color: #222222;
+    /* background-color: #222222; */
+    background-color: transparent;
     border-radius:0 30px 30px 0;
     cursor: pointer;
     border: 1px solid hsl(0,0%,18.82%);
@@ -180,7 +183,7 @@ body{
 }
 
 .right img:hover{
-    outline: 2px solid #0000008a;
+    outline: 2px solid #9393938a;
 }
 
 .right div div:hover{
@@ -302,8 +305,11 @@ main{
     height: 100%;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.25s;
 }
-
+.photo img:hover{
+    border-radius: 0;
+}
 
 .profile{
     display: flex;
@@ -312,7 +318,7 @@ main{
 }
 .profile img{
     border-radius: 50%;
-    width: 40px;
+    width: 36px;
     cursor: pointer;
     margin-top: 5px;
 }
@@ -333,7 +339,7 @@ main{
 .name,.view{
     margin: 3px 0;
     font-size: 12px;
-    color: #aaa;
+    color: #757575;
 }
 
 @media (max-width:545px) {
@@ -349,11 +355,15 @@ footer{
     padding: 10px 0;
     border-top: 1px solid #3d3d3d;
     margin-top: 30px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 footer p,a{
     font-size: 12px;
     text-decoration: none;
+    display: inline-block;
     color: #757575;
 }
 footer a{
@@ -362,5 +372,19 @@ footer a{
 }
 footer a:hover{
     border-bottom: 1px solid var(--youtubeColor);
+    color: var(--youtubeColor);
+}
+details{
+    display: inline-block;
+    margin-left: 4px;
+}
+summary{
+    font-size: 12px;
+    color: #757575;
+    list-style: none;
+    cursor: pointer;
+}
+
+summary:hover{
     color: var(--youtubeColor);
 }
