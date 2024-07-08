@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     font-family: "Jost", sans-serif;
-    /* font-family: "Poppins", sans-serif; */
+    font-family: "Jost", sans-serif;
 }
 
   ::-webkit-scrollbar {
@@ -199,15 +199,14 @@ header{
 section{
     margin-top: 67px;
     background-color: black;
-    height: 90%;
+    height: 93%;
     display: grid;
     grid-template-columns: 1fr 45%;
 }
 
-/* section .left,.right{
-    padding-bottom: 5px;
-} */
-
+.left{
+    padding-bottom: 10px;
+}
 .leftText{
     margin-top: 12%;
     padding-left: 5%;
@@ -217,7 +216,7 @@ section{
 #myName{
     font-size: 44px;
     color: #fff;
-    font-weight: 100;
+    font-weight: 300;
 }
 .left span{
     cursor: url(/pointer.png),auto;
@@ -383,7 +382,7 @@ section{
     justify-content: center;
     align-items: center;
     padding: 0 10px;
-    margin-top: 29px;
+    margin-top: 40px;
 }
 .sectionFooter div{
     flex: 1;
@@ -444,7 +443,7 @@ section{
     background: #FFFFFF;
     border: 1px solid #E8E8E8;
     border-radius: 8px;
-    padding: 35px;
+    padding: 35px 35px 22px 35px;
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -641,6 +640,7 @@ main{
     background-color: #000000;
     color: #fff;
     margin-top: 30px;
+    padding: 20px 0 0 0;
 }
 @media (max-width:760px) {
     .about{
@@ -713,6 +713,7 @@ main{
 
 .information div h3{
     font-size: 23px;
+    line-height: 26px;
     margin: 12px 0;
 }
 .information div p{
@@ -783,7 +784,7 @@ main{
 .profilePicture h4{
     margin-left: 70px;
     margin-top: -82px;
-    font-weight: 100;
+    font-weight: 400;
 }
 .profilePicture span{
     font-size: 13px;
@@ -927,9 +928,9 @@ main{
 
 
 .map{
-    width: 270px;
+    width: 300px;
     height: 230px;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #414040;
@@ -1015,3 +1016,19 @@ main{
     }
 }
 
+
+#project1{
+    background-image: url("	https://shtheme.com/demosd/mikon/wp-content/uploads/2023/09/project-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#project2{
+    background-image: url("	https://shtheme.com/demosd/mikon/wp-content/uploads/2023/09/project-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#project3{
+    background-image: url("https://shtheme.com/demosd/mikon/wp-content/uploads/2023/09/project-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

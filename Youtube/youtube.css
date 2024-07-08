@@ -314,7 +314,10 @@ main{
 .profile{
     display: flex;
     align-items: start;
-    justify-content: center;
+    /* justify-content: center; */
+    /* background: red; */
+    margin-top: 5px;
+    /* padding-right: 50px; */
 }
 .profile img{
     border-radius: 50%;
@@ -329,7 +332,7 @@ main{
 
 .textImg{
     display: grid;
-    grid-template-columns: 65px 1fr;
+    grid-template-columns: 42px 1fr;
 }
 .info{
     font-size: 14px;
