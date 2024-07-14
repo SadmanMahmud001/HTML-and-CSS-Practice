@@ -22,7 +22,6 @@
 .HeaderContainer{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    /* width: 80%; */
 }
 
 .LogoDiv{
