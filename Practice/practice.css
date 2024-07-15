@@ -1,10 +1,237 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
     margin: 0;
     padding: 0;
-    cursor: url(/My\ cursor.png), auto;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box; 
+    font-family: "Jost", sans-serif;
+    text-transform: capitalize;
 }
 
-body{
-    background-color:#1abc9c;
+:root{
+    --maincolor:#0F936C;
 }
+
+::selection {
+    background: var(--maincolor);
+    color: white;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #8382829f;
+    cursor: pointer;
+}
+
+body {
+    background: url('https://static.vecteezy.com/system/resources/previews/017/023/144/non_2x/green-abstract-background-green-background-design-abstract-futuristic-background-green-modern-background-green-abstract-background-for-templates-cards-and-websites-free-vector.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding-bottom: 1000px;
+}
+
+header{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuIcon{
+    width: 35px;
+    margin-right: 20px;
+    transition: all 0.15s;
+    display: none;
+    cursor: pointer;
+}
+.menuIcon:hover{
+    fill: var(--maincolor);
+}
+
+
+@media (max-width:800px) {
+    .info{
+        display: none;
+    }
+    .menuIcon{
+        display: flex;
+    }
+    .search{
+        display: none !important;
+    }
+}
+
+
+.logo{
+    margin-left: 17px;
+}
+.logo img{
+    width: 90px;
+    cursor: pointer;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+    transition: all 0.15s;
+    display: flex;
+    margin: 10px;
+    font-size: 14px;
+}
+.menu a::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: var(--maincolor);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: all 0.30s;
+}
+.menu a:hover::after {
+    width: 100%;
+}
+.menu a:active::after {
+    width: 0;
+}
+
+
+.menu span{
+    display: flex;
+    margin: 10px;
+    cursor: pointer;
+}
+.menu span svg{
+    width: 22px;
+    margin-top: 1px;
+}
+.menu span::before{
+    content: "";
+    height: 2px;
+    width: 0px;
+    position: absolute;
+    bottom: 13px;
+    display: flex;
+    background-color: var(--maincolor);
+    transition: width 0.30s;
+}
+.menu span:hover::before{
+    width: 100%;
+}
+.menu span:active::before{
+    width: 0px;
+}
+
+.menu a:hover{
+    color:  var(--maincolor);
+}
+
+.menu{
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 100px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: none;
+    padding: 5px 0;
+}
+
+.info{
+    margin: auto;
+    width: 500px;
+}
+
+.info ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    width: 100%;
+}
+.info ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.15s;
+    font-size: 14px;
+}
+.info ul li a:hover{
+    color: var(--maincolor);
+}
+
+.info ul li a::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: var(--maincolor);
+    position: absolute;
+    display: flex;
+    transition: width 0.30s;
+}
+
+.info ul li a:hover::after{
+    width: 80px;
+}
+.info ul li a:active::after{
+    width: 0px;
+}
+
+.search{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.search span svg{
+    width: 22px;
+    margin-top: 4px;
+}
+
+.search span{
+    cursor: pointer;
+    font-size: 14px;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search span:active{
+    color: var(--maincolor);
+}
+
+.search span::before{
+    content: "";
+    height: 2px;
+    width: 0px;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    background-color: var(--maincolor);
+    transition: width 0.30s;
+}
+.search span:hover::before{
+    width: 80px;
+}
+.search span:active::before{
+    width: 0px;
+}
+
+.search a{
+    text-decoration: none;
+    transition: all 0.15s;
+}
+.search a:hover{
+    color: var(--maincolor);
+}
+
+

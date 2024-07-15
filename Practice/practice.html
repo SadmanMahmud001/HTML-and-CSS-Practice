@@ -1,158 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="shortcut icon" href="/Title logo.png" type="image/x-icon">
+  <meta charset="UTF-8">
   <link rel="stylesheet" href="practice.css">
+  <link rel="shortcut icon" href="/Title logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taofiq</title>
 </head>
 <body>
+  
+ <header>
+
+  <div class="logo">
+  <img src="/My logo.png" alt="">
+  </div>
+
+   <div class="info">
+     <ul>
+        <li><a href="/Youtube/youtube.html" target="_blank" title="Home">Home</a></li>
+        <li><a href="#" title="about">about</a></li>
+        <li><a href="#" title="services">services</a></li>
+        <li><a href="#" title="portfolio">portfolio</a></li>
+        <li><a href="#" title="experience">experience</a></li>
+        <li><a href="#" title="contact">contact</a></li>
+        <li>
+     </ul>
+
+   </div>
 
 
-<button id="btn">Button</button>
+
+  <div class="menu" id="Menu">
+
+      <a href="/Youtube/youtube.html" target="_blank" title="Home">Home</a>
+      <a href="#" title="about">about</a>
+      <a href="#" title="services">services</a>
+      <a href="#" title="portfolio">portfolio</a>
+      <a href="#" title="experience">experience</a>
+      <a href="#" title="contact">contact</a>
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15 15L21 21" stroke="#44B58F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#44B58F" stroke-width="2"></path> </g></svg>     
+          Search
+      </span>
+  
+</div>
+
+  <svg class="menuIcon" onclick="toggleMenu()"
+  viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>menu-hamburger</title> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="48" height="48" fill="none"></rect> </g> <g id="icons_Q2" data-name="icons Q2"> <g> <path d="M42,12a2,2,0,0,1-2,2H8a2,2,0,0,1-2-2H6a2,2,0,0,1,2-2H40a2,2,0,0,1,2,2Z"></path> <path d="M42,24a2,2,0,0,1-2,2H8a2,2,0,0,1-2-2H6a2,2,0,0,1,2-2H40a2,2,0,0,1,2,2Z"></path> <path d="M42,36a2,2,0,0,1-2,2H8a2,2,0,0,1-2-2H6a2,2,0,0,1,2-2H40a2,2,0,0,1,2,2Z"></path> </g> </g> </g> </g></svg>  
+
+  <div class="search">
+    <a href="/Practice/search.html">
+    <span>
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15 15L21 21" stroke="#44B58F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#44B58F" stroke-width="2"></path> </g></svg>     
+        Search
+    </span>
+  </a>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 </body>
 <script>
-
-
-
-
-var maths = (a,b) => a * b;
-console.log(maths(30,5));
-
-
-(function(messagr){
-  console.log('Hello my name is Sadman Mahmud'
-  ,messagr);
-}('Taofiq.'));
-
-
-function demo(){
-  console.log('Button');
-};
-document.getElementById('btn').addEventListener
-('click',demo);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  function toggleMenu() {
+      var menu = document.getElementById('Menu');
+      if (menu.style.display === 'block') {
+          menu.style.display = 'none';
+      } 
+      else {
+          menu.style.display = 'block';
+      }
+  }
 </script>
 </html>
+
+

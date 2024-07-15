@@ -13,7 +13,7 @@
   ::-webkit-scrollbar-thumb {
     background-color: var(--mainColor);
     border-radius: 6px;
-    cursor:url(/pointer.png),auto;
+    cursor:pointer;
   }
   ::-webkit-scrollbar-thumb:active{
     background-color: #84de0d;
@@ -30,10 +30,6 @@
 :root{
     --mainColor:#91FF00;
     /* --mainColor:#D90429; */
-}
-
-body{
-    cursor: url(/My\ cursor.png), auto;
 }
 
 .container{
@@ -100,7 +96,7 @@ header{
 .LoGo p{
     font-size: 33px;
     font-weight: bold;
-    cursor: url(/pointer.png),auto;
+    cursor:pointer;
     color: #fff;
 }
 .LoGo p span{
@@ -132,7 +128,7 @@ header{
     font-size: 12px;
     color: white;
     text-decoration: none;
-    cursor:url(/pointer.png),auto;
+    cursor:pointer;
     text-transform: uppercase;
     transition: all 0.15s;
 }
@@ -152,7 +148,7 @@ header{
     background-color: black;
     color: #fff;
     border: 1px solid white;
-    cursor: url(/pointer.png),auto;
+    cursor: pointer;
     font-size: 12px;
 }
 .lastText button:hover{
@@ -169,7 +165,7 @@ header{
     padding: 5px 8px;
     border-radius: 3px;
     transition: all 0.15s;    
-    cursor: url(/pointer.png),auto;
+    cursor: pointer;
     display: none;
 }
 .menu:hover{
@@ -219,7 +215,7 @@ section{
     font-weight: 300;
 }
 .left span{
-    cursor: url(/pointer.png),auto;
+    cursor: pointer;
 }
 #myName span span{
     color: var(--mainColor);
@@ -239,7 +235,7 @@ section{
     background-color: black;
     color: #fff;
     border: 1px solid white;
-    cursor: url(/pointer.png),auto;
+    cursor: pointer;
     width: 150px;
     text-align: center;
 }
@@ -329,7 +325,7 @@ section{
         text-align: center;
     }
     .right{
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     }
     .profile{
         width: 250px;
@@ -478,7 +474,7 @@ section{
     border-radius: 4px;
     margin-top: 10px;
     transition: all 0.15s;
-    cursor: url(/pointer.png),auto;
+    cursor: pointer;
 }
 .servicesLeft div button:hover{
     background-color: #fff;
@@ -510,9 +506,7 @@ section{
 /* Main */
 
 main{
-    /* border: 1px solid red; */
     display: grid;
-    /* grid-template-rows: 1fr 1fr 1fr; */
     margin-top: 30px;
     width: 90%;
     justify-self: center;
@@ -531,7 +525,7 @@ main{
     background-color: #E8E8E8;
     max-width:200px ;
     padding: 35px;
-    cursor: url(/pointer.png),auto;
+    cursor: pointer;
     margin: 180px 0px 30px 30px;
     border-radius: 4px;
     background: #fff;
@@ -551,7 +545,7 @@ main{
     border-radius: 4px;
     align-items: center;
     display: flex;
-    cursor: url(/pointer.png),auto;
+    cursor: pointer;
     transition: all 0.15s;
 }
 .pBox button:hover{
@@ -579,13 +573,13 @@ main{
     margin: 0 7px;
     font-size: 14px;
     padding: 7px 14px;
-    background: black;
+    background: rgba(0, 0, 0, 0.288);
     color: #fff;
     backdrop-filter: blur(16px);
     border: 1px solid white;
     font-size: 12px;
-    border-radius: 4px;
-    cursor:url(/pointer.png),auto;
+    border-radius: 2px;
+    cursor:pointer;
     text-transform: capitalize;
     transition: all 0.15s;
 }
@@ -730,7 +724,7 @@ main{
     padding: 5px;
     border-radius: 5px;
     border: 1px solid  rgb(255, 255, 255);
-    cursor: url(/pointer.png),auto;
+    cursor: pointer;
     transition: all 0.15s;
 }
 .fb{
@@ -751,7 +745,6 @@ main{
     justify-content: center;
     align-items: center;
     line-height: 20px;
-    /* width: 400px; */
     word-spacing: 3px;
     gap: 20px;
     padding: 30px;
@@ -759,9 +752,7 @@ main{
 
 .Box{
     border:1px solid #E8E8E8;
-    /* width: 290px; */
     margin: auto;
-    /* height: 300px; */
     border-radius: 4px;
     padding: 35px;
 }
@@ -849,13 +840,13 @@ main{
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: 13px;
-    cursor: url(/pointer.png),auto;
+    cursor: pointer;
 }
 
 .btn{
     border: 1px solid #414040;
     font-size: 11px;
-    cursor: url(/pointer.png),auto;
+    cursor: pointer;
     padding: 8px 10px;
     background-color: #ffffff;
     border-radius: 3px;
@@ -911,7 +902,7 @@ main{
     padding: 10px;
     border: 1px solid #414040;
     border-radius: 4px;
-    cursor: url(/pointer.png),auto;
+    cursor: pointer;
 }
 
 .pmvInformation h5{
@@ -930,7 +921,6 @@ main{
 .map{
     width: 300px;
     height: 230px;
-    /* margin: auto; */
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #414040;
@@ -987,7 +977,7 @@ main{
     padding: 5px;
     border-radius: 5px;
     border: 1px solid  rgb(255, 255, 255);
-    cursor: url(/pointer.png),auto;
+    cursor: pointer;
     transition: all 0.15s;
 }
 .fb2{

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taofiq</title>
+    <link rel="shortcut icon" href="/Title logo.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+        font-family: "Jost", sans-serif;
+    }
+    .searchInput svg{
+        width: 27px;
+        margin-top: -6px;
+        margin-right: 2px;
+        cursor: pointer;
+    }
+    .searchInput{
+        background-color: #EFFFFD;
+        width: 100%;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    .searchInput div{
+        display: flex;
+        align-items: center;
+        margin-left: 70px;
+        margin-top: 50px;
+        padding: 10px;
+        width: 60%;
+        border-bottom: 3px solid black;
+    }
+    .searchInput div input{
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .searchInput div input:focus{
+        outline: none;
+    }
+
+    .searchInput div input::placeholder{
+        font-size: 25px;
+    }
+
+    @media (min-width:920px) {
+        .searchInput div {
+            width: 610px;
+        }
+    }
+    .Cross{
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        cursor: pointer;
+    }
+
+    </style>
+</head>
+<body>
+<section class="searchInput" id="searchInput">
+  
+        <div>
+          <svg for="Search" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15 15L21 21" stroke="#44B58F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#44B58F" stroke-width="2"></path> </g></svg>     
+        
+          <input id="Search" type="search" placeholder="Search here...">
+        </div>
+
+        <a href="/Practice/practice.html">
+        <svg class="Cross" title="Cross" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19 5L5 19M5.00001 5L19 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>        
+        </a>
+    </section>
+        
+
+</body>
+</html>

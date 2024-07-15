@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-    /* font-family: "Poppins", sans-serif; */
     font-family: "Roboto","Arial",sans-serif;
 }
 
@@ -218,9 +217,9 @@ body{
     }
 }
 
-@media (min-width:1281px) {
+@media (min-width:1000px) {
     .inputs input {
-        width: 900px !important;
+        width: 500px !important;
 }
 }
 
@@ -285,7 +284,6 @@ main{
     margin-left: 80px;
     display: grid;
     row-gap: 20px;
-    /* gap: 10px; */
     grid-template-columns: 
     repeat(auto-fit, minmax(320px,1fr));
 }
@@ -314,10 +312,7 @@ main{
 .profile{
     display: flex;
     align-items: start;
-    /* justify-content: center; */
-    /* background: red; */
     margin-top: 5px;
-    /* padding-right: 50px; */
 }
 .profile img{
     border-radius: 50%;

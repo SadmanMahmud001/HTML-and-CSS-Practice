@@ -16,13 +16,11 @@
     height: 100vh;
     grid-template-rows:1fr 4fr 1fr;
     width: 90%;
-    margin: auto;
+   margin: auto;
 }
-
 .HeaderContainer{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    /* width: 80%; */
 }
 
 .LogoDiv{
