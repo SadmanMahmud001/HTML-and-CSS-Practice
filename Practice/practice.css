@@ -75,7 +75,7 @@ header{
     cursor: pointer;
 }
 
-.menu a{
+.menu div a{
     text-decoration: none;
     color: black;
     cursor: pointer;
@@ -86,7 +86,7 @@ header{
     margin: 10px;
     font-size: 14px;
 }
-.menu a::after{
+.menu div a::after{
     content: "";
     height: 2px;
     width: 0;
@@ -96,14 +96,17 @@ header{
     left: 0;
     transition: all 0.30s;
 }
-.menu a:hover::after {
+.menu div a:hover::after {
     width: 100%;
 }
-.menu a:active::after {
+.menu div a:active::after {
     width: 0;
 }
 
-
+.menu a{
+    text-decoration: none;
+    color: black;
+}
 .menu span{
     display: flex;
     margin: 10px;
